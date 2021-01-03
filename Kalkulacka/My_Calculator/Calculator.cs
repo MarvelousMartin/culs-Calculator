@@ -10,7 +10,7 @@ namespace Kalkulacka
             FormBorderStyle = FormBorderStyle.None;
             InitializeComponent(); //poustime form
         }
-        //volime float kvuli moznosti vlozeni desetinneho cisla
+        //volime float kvuli moznosti vlozeni napr. 3.14
         float cislo1 = 0;
         float cislo2 = 0;
         int pocetOperandu = 0; //pocet zmacknutych operandu [+ - * / =]
@@ -34,23 +34,30 @@ namespace Kalkulacka
             // Prida proklik na vsechna tlacitka krome resetu
             //Prohleda vsechny controls ve formulari, ktere nemaji na sobe Reset a tem da event button.Click
 
-            foreach (Control c in Controls)
+            foreach (Control control in Controls)
             {
-                if (c is Button)
+                if (control is Button)
                 {
-                    if (c.Text != "Reset")
-                        c.Click += new System.EventHandler(btn_click);
+                    if (control.Text != "Reset")
+                        control.Click += new System.EventHandler(btn_click);
                 }
             }
         }
 
+        private void vedeckaBtn_Click(object sender, EventArgs e)
+        {
+            ScienceForm scienceForm = new ScienceForm();
+            scienceForm.ShowDialog(this);
+            textBox1.Text = "";
+        }
+
         // funkce na kontrolovani stisknuti operandu
-        public bool isOperator(Button button)
+        public bool kontrolaOperand(Button button)
         {
             string buttonText = button.Text;
 
             if (buttonText.Equals("+") || buttonText.Equals("-") ||
-                buttonText.Equals("X") || buttonText.Equals("/") ||
+                buttonText.Equals("*") || buttonText.Equals("/") ||
                 buttonText.Equals("="))
             {
                 return true;
@@ -68,11 +75,11 @@ namespace Kalkulacka
         {
             Button button = (Button)sender;
 
-            if (!isOperator(button))// true pokud je na tlacitku napsane cislo
+            if (!kontrolaOperand(button))// true pokud je na tlacitku napsane cislo
             {
                 if (operandZvolen) //kliknuli jsme na tlacitko?
                 {
-                    cislo1 = float.Parse(textBox1.Text); //vezmeme si text z tlacitka a ulozime do cislo1
+                    float.TryParse(textBox1.Text, out cislo1); //vezmeme si text z tlacitka a ulozime do cislo1
                     textBox1.Text = ""; //vymaze vsechno z textboxu, abychom mohli psat nove cislo
                 }
                 // pokud textbox neobsahuje "."
@@ -118,7 +125,7 @@ namespace Kalkulacka
                         if (!rovnitkoStisknuto)
                         {
                             cislo2 = float.Parse(textBox1.Text);
-                            textBox1.Text = Convert.ToString(calc(operand, cislo1, cislo2));
+                            textBox1.Text = Convert.ToString(spocitejVysledek(operand, cislo1, cislo2));
                             cislo2 = float.Parse(textBox1.Text);
                             operand = button.Text;
                             operandZvolen = true;
@@ -133,7 +140,7 @@ namespace Kalkulacka
                     else
                     {
                         cislo2 = float.Parse(textBox1.Text);
-                        textBox1.Text = Convert.ToString(calc(operand, cislo1, cislo2));
+                        textBox1.Text = Convert.ToString(spocitejVysledek(operand, cislo1, cislo2));
                         cislo1 = float.Parse(textBox1.Text);
                         operandZvolen = true;
                         rovnitkoStisknuto = true;
@@ -144,7 +151,7 @@ namespace Kalkulacka
         }
 
         // Pocitaci funkce pres switch
-        public float calc(string operand, float n1, float n2)
+        public float spocitejVysledek(string operand, float n1, float n2)
         {
             float result = 0;
 
@@ -156,7 +163,7 @@ namespace Kalkulacka
                 case "-":
                     result = n1 - n2;
                     break;
-                case "X":
+                case "*":
                     result = n1 * n2;
                     break;
                 case "/":

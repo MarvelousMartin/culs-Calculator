@@ -6,16 +6,10 @@ c:\users\omar\documents\visual studio 2013\Projects\My_Calculator\My_Calculator\
 c:\users\omar\documents\visual studio 2013\Projects\My_Calculator\My_Calculator\obj\Debug\My_Calculator.csproj.GenerateResource.Cache
 c:\users\omar\documents\visual studio 2013\Projects\My_Calculator\My_Calculator\obj\Debug\My_Calculator.exe
 c:\users\omar\documents\visual studio 2013\Projects\My_Calculator\My_Calculator\obj\Debug\My_Calculator.pdb
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.exe.config
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.exe
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.pdb
 D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.csprojAssemblyReference.cache
 D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\Kalkulacka.Kalkulacka.resources
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.Properties.Resources.resources
 D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.csproj.GenerateResource.cache
 D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.csproj.CoreCompileInputs.cache
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.exe
-D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.pdb
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.exe.config
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.exe
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\bin\Debug\My_Calculator.pdb
@@ -26,3 +20,10 @@ C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\obj\Debug\My_Calcul
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.exe
 C:\Users\Admin\Downloads\Kalkulacka\Kalkulacka\My_Calculator\obj\Debug\My_Calculator.pdb
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\Kalkulacka.ScienceForm.resources
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\Kalkulacka.exe.config
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\Kalkulacka.exe
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\bin\Debug\Kalkulacka.pdb
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\Kalkulacka.Properties.Resources.resources
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\Kalkulacka.exe
+D:\Semestr 3\Komponent\Omar\Kalkulacka\My_Calculator\obj\Debug\Kalkulacka.pdb

@@ -47,6 +47,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.vedeckaBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -57,7 +58,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(344, 36);
+            this.textBox1.Size = new System.Drawing.Size(339, 36);
             this.textBox1.TabIndex = 100;
             this.textBox1.Text = "0";
             // 
@@ -239,11 +240,23 @@
             this.button9.Text = "=";
             this.button9.UseVisualStyleBackColor = true;
             // 
+            // vedeckaBtn
+            // 
+            this.vedeckaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.vedeckaBtn.Location = new System.Drawing.Point(379, 115);
+            this.vedeckaBtn.Name = "vedeckaBtn";
+            this.vedeckaBtn.Size = new System.Drawing.Size(87, 54);
+            this.vedeckaBtn.TabIndex = 119;
+            this.vedeckaBtn.Text = "Vědecká";
+            this.vedeckaBtn.UseVisualStyleBackColor = true;
+            this.vedeckaBtn.Click += new System.EventHandler(this.vedeckaBtn_Click);
+            // 
             // Kalkulacka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 298);
+            this.ClientSize = new System.Drawing.Size(489, 298);
+            this.Controls.Add(this.vedeckaBtn);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
@@ -293,5 +306,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button vedeckaBtn;
     }
 }
